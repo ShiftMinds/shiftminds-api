@@ -18,8 +18,3 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-
-// Route::get('/', function () {
-//     $data= "nsj-tech";
-//     Mail::to(users: 'hunyo9478@gmail.com')->send(new NsjTech($data));
-// });

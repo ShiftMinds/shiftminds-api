@@ -26,10 +26,7 @@ Route::get('user', function()
     return 'Hello World';
 });
 
-// Route::post('inquire-user', function () {
-//     $data= "nsj-tech";
-//     Mail::to(users: 'hunyo9478@gmail.com')->send(new NsjTech($data));
-// });
+
 
 Route::post('/inquire-user', function (Request $request) {
 
