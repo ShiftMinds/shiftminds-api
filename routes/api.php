@@ -28,9 +28,11 @@ Route::get('user', function()
     return 'Hello World';
 });
 
+Route::middleware('auth:sanctum')->get('/inquire', function (Request $request) {
+    return $request->inquire();
+});
 
-
-Route::post('/inquire-user', function (Request $request) {
+Route::post('inquire', function (Request $request) {
 
     Mail::to('inquiry@shiftminds.com.ph')->send(
         new NsjTech( 
