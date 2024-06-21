@@ -23,29 +23,10 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 
-Route::get('user', function()
+Route::get('/user', function()
 {
     return 'Hello World';
 });
-
-// Route::middleware('auth:sanctum')->post('/inquire', function (Request $request) {
-
-//     Mail::to('inquiry@shiftminds.com.ph')->send(
-//         new NsjTech( 
-//             $request->name,
-//             $request->email,
-//             $request->contact,
-//             $request->company,
-//             $request->messages,
-//         )
-//     );
-//     return response()->json(['message' => 'success']);
-// });
-
-// Route::post('inquire', function()
-// {
-//     return response()->json(['message' => 'success']);
-// });
 
 
 Route::post('/inquire', function (Request $request) {
